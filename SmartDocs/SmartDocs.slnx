@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="SmartDocs.Api/SmartDocs.Api.csproj" />
+  <Project Path="SmartDocs.Application/SmartDocs.Application.csproj" />
+  <Project Path="SmartDocs.Domain/SmartDocs.Domain.csproj" />
+  <Project Path="SmartDocs.Infrastructure/SmartDocs.Infrastructure.csproj" />
+  <Project Path="SmartDocs.Tests/SmartDocs.Tests.csproj" />
+</Solution>
