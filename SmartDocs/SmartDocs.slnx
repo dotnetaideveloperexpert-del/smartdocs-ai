@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
   <Project Path="SmartDocs.Api/SmartDocs.Api.csproj" />
   <Project Path="SmartDocs.Application/SmartDocs.Application.csproj" />
   <Project Path="SmartDocs.Domain/SmartDocs.Domain.csproj" />
