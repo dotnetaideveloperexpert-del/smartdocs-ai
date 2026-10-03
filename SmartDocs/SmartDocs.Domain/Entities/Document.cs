@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-
+using SmartDocs.Domain.Entities;
 namespace SmartDocs.Domain.Entities
 {
     public class Document

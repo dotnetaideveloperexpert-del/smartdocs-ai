@@ -6,6 +6,7 @@ using SmartDocs.Application.Interfaces;
 using SmartDocs.Application.Services;
 using SmartDocs.Infrastructure.Auth;
 using SmartDocs.Infrastructure.Persistence;
+using SmartDocs.Infrastructure.Storage;
 using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<IFileStorage, LocalFileStorage>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>

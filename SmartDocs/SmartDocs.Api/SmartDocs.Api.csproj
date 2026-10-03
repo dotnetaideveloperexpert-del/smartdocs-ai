@@ -22,4 +22,8 @@
     <ProjectReference Include="..\SmartDocs.Infrastructure\SmartDocs.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="uploads\" />
+  </ItemGroup>
+
 </Project>
