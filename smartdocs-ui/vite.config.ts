@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://localhost:7001',   // ⚠️ Apna port daalo
+        target: 'https://localhost:7121',   
         changeOrigin: true,
         secure: false,
       },
