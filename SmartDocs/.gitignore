@@ -481,8 +481,7 @@ $RECYCLE.BIN/
 # Vim temporary swap files
 *.swp
 
-# Sensitive config — never commit
-**/appsettings.json
-**/appsettings.Development.json
-**/appsettings.Local.json
-!**/appsettings.example.json
+# Sensitive config
+SmartDocs/SmartDocs.Api/appsettings.json
+SmartDocs/SmartDocs.Api/appsettings.Development.json
+!SmartDocs/SmartDocs.Api/appsettings.example.json
