@@ -9,7 +9,8 @@ using SmartDocs.Infrastructure.Persistence;
 using SmartDocs.Infrastructure.Storage;
 using System.Text;
 var builder = WebApplication.CreateBuilder(args);
-
+var blobConnStr = Environment.GetEnvironmentVariable("AZURE_BLOB_CONNECTION_STRING")
+                  ?? builder.Configuration["AzureBlob:ConnectionString"];
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
