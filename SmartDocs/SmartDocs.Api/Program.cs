@@ -16,7 +16,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IJwtService, JwtService>();
-builder.Services.AddScoped<IFileStorage, LocalFileStorage>();
+builder.Services.AddScoped<IFileStorage, AzureBlobStorage>();
+
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
